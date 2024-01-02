@@ -1,0 +1,13 @@
+image: maven:4.0-openjdk-21
+
+default:
+  - privatlocal
+
+stages:
+  - test
+
+Integration test:
+  stage: test
+  script:
+    - mvn test
+
